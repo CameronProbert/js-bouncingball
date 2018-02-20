@@ -1,0 +1,22 @@
+#ball{
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  padding: 0px;
+  background-color: red;
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  position: absolute;
+}
+
+#container{
+  height: 100vh;
+  position: relative;
+}
+
+body{
+  margin: 0px;
+}
