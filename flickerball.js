@@ -72,7 +72,7 @@ function newBall(e){
 function createImage(){
   var container = document.getElementById("container");
   var img = document.createElement("img");
-  img.setAttribute("src", "./images/ball.jpg");
+  img.setAttribute("src", "./images/ball.png");
   img.setAttribute("class", "ball");
   container.appendChild(img);
   return img;
