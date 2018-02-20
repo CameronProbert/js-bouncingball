@@ -2,6 +2,10 @@
 var ticksPerSecond = 60; // Game Speed
 var windowX = window.innerWidth;
 var windowY = window.innerHeight;
+var mode = "sugarglider";
+
+var gliderNames = ["sg1", "sg2", "sg3", "sg4"];
+var ballNames = ["ball"];
 
 // Environment variables
 var gravity = 0.4;                  // Amount ball will be pulled down by (in pixels per tick)
@@ -72,10 +76,20 @@ function newBall(e){
 function createImage(){
   var container = document.getElementById("container");
   var img = document.createElement("img");
-  img.setAttribute("src", "./images/ball.png");
+  img.setAttribute("src", "./images/" + getImage() + ".png");
   img.setAttribute("class", "ball");
   container.appendChild(img);
   return img;
+}
+
+function getImage(){
+  if (mode === "ball"){
+    return ballNames[0];
+  }
+  if (mode === "sugarglider"){
+    var num = parseInt(Math.random() * gliderNames.length);
+    return gliderNames[num];
+  }
 }
 
 /*
