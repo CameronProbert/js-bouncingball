@@ -1,9 +1,9 @@
-#ball{
+.ball{
   height: 50px;
   width: 50px;
   margin: 0px;
   padding: 0px;
-  background-color: red;
+  /* background-color: red; */
   -khtml-user-select: none;
   -o-user-select: none;
   -moz-user-select: none;
